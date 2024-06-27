@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Dangwal</title>
+  <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+  <header class="bg-black text-white dark:bg-white dark:text-gray-600 sticky top-0 z-10">
+    <section class="max-w-6xl mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold font-1">
+        <a href="#About">Vishal Dangwal</a>
+      </h1>
+      <div>
+        <button id="menu" class="text-white dark:text-gray-600 text-3xl md:hidden cursor-pointer">
+          &#9776;
+        </button>
+        <nav class="hidden md:block space-x-8 text-2xl font-medium" aria-label="main">
+          <a href="about.html" class="hover:opacity-80 dark:hover:text-black">About</a>
+          <a href="#Portfolio" class="dark:hover:text-black hover:opacity-80">Portfolio</a>
+          <a href="#Blog" class="hover:opacity-80 dark:hover:text-black">Blog</a>
+          <a href="#Contact" class="hover:opacity-80 dark:hover:text-black">Contact</a>
+        </nav>
+      </div>
+    </section>
+  </header>
+  <main class="max-w-6xl mx-auto">
+    <section id="About"
+      class="flex flex-col-reverse justify-center items-center sm:flex-row p-6 gap-4 sm:mt-10 mb-12 scroll-m-40">
+      <article class="sm:w-3/4">
+        <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white">
+          Introduction
+        </h2>
+        <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-200">
+          I am currently pursuing a Bachelor of Technology (B.Tech) in
+          Information Technology from NITJ(Dr.B.R. Ambedkar National Institute
+          of Technology Jalandhar. Throughout my studies, I have gained
+          hands-on experience with programming languages such as Python, C,
+          and C++, as well as practical insights into database management ,
+          problem solving and web development.
+          <br />
+          My coursework has also included subjects like algorithms, operating
+          systems, and artificial intelligence, which have broadened my
+          understanding of both theoretical concepts and their real-world
+          applications. I am passionate about leveraging technology to solve
+          complex problems and improve efficiency in various domains. My
+          academic projects have involved developing web applications,
+          creating database systems, and implementing security protocols, all
+          of which have honed my technical abilities and teamwork skills. As I
+          continue my journey in the field of Information Technology, I am
+          eager to explore opportunities for innovation and contribute to
+          advancements in the tech industry.`
+        </p>
+      </article>
+      <img src="img/vishal dangwal.jpg" alt="MY PIC"
+        class="max-w-48 max-h-48 sm:max-w-2xl sm:max-h-2xl bg-contain cursor-pointer hover:scale-150 circle" />
+    </section>
+    <section id="Portfolio"
+      class="flex flex-col-reverse justify-center items-center sm:flex-row p-6 gap-4 sm:mt-10 mb-12 scroll-m-40">
+      <article class="sm:w-3/4">
+        <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white">
+          Projects
+        </h2>
+        <ol>
+          <li class="text-3xl text-center font-semibold list-none">
+            <h3
+              class="max-w-md text-3xl font-semibold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white mt-10">
+              Netflix-Clone
+            </h3>
+            <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-200">
+              The Netflix Clone project is a web application designed to
+              replicate the core functionalities of the popular streaming
+              service, Netflix. This project aims to provide a seamless user
+              experience for streaming movies and TV shows, showcasing a
+              user-friendly interface.
+            </p>
+            <ul class="hidden">
+              <h4
+                class="max-w-md text-2xl font-semibold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white pt-5">
+                Key Features
+              </h4>
+              <li></li>
+            </ul>
+          </li>
+          <li class="text-3xl text-center font-semibold">
+            <h3
+              class="max-w-md text-3xl font-semibold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white mt-10">
+              Acme-Rockets
+            </h3>
+            <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-200">
+              The Acme Rockets project is a web application designed to build
+              a responsive and user-friendly application based on tailwindcss.
+              This project aims to provide Information about a arbitrary
+              organization named Acme Rockets which build up futuristic
+              Rockets till the different parts of the Universe.
+            </p>
+            <ul class="hidden">
+              <h4
+                class="max-w-md text-2xl font-semibold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white pt-5">
+                Key Features
+              </h4>
+              <li></li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+    </section>
+    <section id="Contact"
+      class="flex flex-col justify-center items-center sm:flex-col p-6 gap-4 sm:mt-10 mb-12 scroll-m-40">
+      <h2 class="max-w-md text-4xl font-bold text-left sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white">
+        Contact
+      </h2>
+      <form class="max-w-6xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4">
+        <label for="subject">Your Subject</label>
+        <input type="text" name="subject" id="subject" minlength="3" maxlength="60" placeholder="Your Subject" required
+          class="w-full text- text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none dark:text-black" />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"
+          class="w-full text-black text-2xl sm:Tex-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none dark:text-black"
+          required></textarea>
+        <button class="text-white bg-black border-none dark:text-black dark:bg-white rounded-xl p-3
+        w-48 mx-auto">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer id="Footer" class="bg-black dark:bg-white text-xl text-white dark:text-black">
+    <section class="max-w-6xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between py-10">
+      <nav class="flex flex-col gap-2" aria-label="footer">
+        <a href="https://x.com/Vishaldangwal3">X</a>
+        <a href="https://www.linkedin.com/in/vishal-dangwal-219759282/">Linkedin</a>
+        <a href="https://github.com/vishaldangwal">Github</a>
+      </nav>
+      <nav class="flex flex-col gap-2" aria-label="footer" >
+        <a href="#About">About</a>
+        <a href="#Portfolio">Projects</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+      <div class="flex flex-col sm:gap-2">
+        <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+        <p class="text-right">All right Reserved</p>
+    </div>
+    </section>
+  </footer>
+</body>
+
+</html>
