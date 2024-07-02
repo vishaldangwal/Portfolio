@@ -7,6 +7,7 @@
   <title>Vishal Dangwal</title>
   <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon" />
   <link rel="stylesheet" href="css/style.css" />
+  <script src="index.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -35,7 +36,7 @@
         <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white">
           Introduction
         </h2>
-        <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-200">
+        <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-300">
           I am currently pursuing a Bachelor of Technology (B.Tech) in
           Information Technology from NITJ(Dr.B.R. Ambedkar National Institute
           of Technology Jalandhar. Throughout my studies, I have gained
@@ -57,7 +58,7 @@
         </p>
       </article>
       <img src="img/vishal dangwal.jpg" alt="MY PIC"
-        class="max-w-48 max-h-48 sm:max-w-2xl sm:max-h-2xl bg-contain cursor-pointer hover:scale-150 circle" />
+        class="max-w-48 max-h-48 sm:max-w-2xl sm:max-h-2xl bg-contain cursor-pointer hover:scale-150 transition-transform duration-700 circle"/>
     </section>
     <section id="Portfolio"
       class="flex flex-col-reverse justify-center items-center sm:flex-row p-6 gap-4 sm:mt-10 mb-12 scroll-m-40">
@@ -71,7 +72,7 @@
               class="max-w-md text-3xl font-semibold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white mt-10">
               Netflix-Clone
             </h3>
-            <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-200">
+            <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-300">
               The Netflix Clone project is a web application designed to
               replicate the core functionalities of the popular streaming
               service, Netflix. This project aims to provide a seamless user
@@ -91,7 +92,7 @@
               class="max-w-md text-3xl font-semibold text-center sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white mt-10">
               Acme-Rockets
             </h3>
-            <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-200">
+            <p class="max-w-3xl text-2xl mt-4 text-center sm:text-left text-gray-600 dark:text-gray-300">
               The Acme Rockets project is a web application designed to build
               a responsive and user-friendly application based on tailwindcss.
               This project aims to provide Information about a arbitrary
@@ -114,7 +115,7 @@
       <h2 class="max-w-md text-4xl font-bold text-left sm:text-5xl sm:text-left sm:text-slate-900 dark:text-white">
         Contact
       </h2>
-      <form class="max-w-6xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4">
+      <form class="max-w-6xl mx-auto text-2xl sm:text-3xl flex flex-col items-start gap-4" id ="myForm">
         <label for="subject">Your Subject</label>
         <input type="text" name="subject" id="subject" minlength="3" maxlength="60" placeholder="Your Subject" required
           class="w-full text- text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none dark:text-black" />
@@ -128,18 +129,19 @@
     </section>
   </main>
   <footer id="Footer" class="bg-black dark:bg-white text-xl text-white dark:text-black">
-    <section class="max-w-6xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between py-10">
+    <section class="max-w-6xl mx-auto p-4 flex gap-4 md:flex-row sm:flex-row sm:justify-between py-10">
       <nav class="flex flex-col gap-2" aria-label="footer">
         <a href="https://x.com/Vishaldangwal3">X</a>
         <a href="https://www.linkedin.com/in/vishal-dangwal-219759282/">Linkedin</a>
         <a href="https://github.com/vishaldangwal">Github</a>
+        <a href="mailto:vishaldangwal@gmail.com">Mail</a>
       </nav>
       <nav class="flex flex-col gap-2" aria-label="footer" >
         <a href="#About">About</a>
         <a href="#Portfolio">Projects</a>
         <a href="#Contact">Contact</a>
       </nav>
-      <div class="flex flex-col sm:gap-2">
+      <div class="flex flex-col justify-end sm:gap-2">
         <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
         <p class="text-right">All right Reserved</p>
     </div>
