@@ -627,6 +627,18 @@ video {
   cursor: pointer;
 }
 
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+.resize-y {
+  resize: vertical;
+}
+
+.scroll-m-10 {
+  scroll-margin: 2.5rem;
+}
+
 .scroll-m-40 {
   scroll-margin: 10rem;
 }
@@ -677,6 +689,10 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -701,6 +717,11 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-slate-50 {
@@ -792,18 +813,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.caret-red-500 {
+  caret-color: #ef4444;
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
-.duration-1000 {
-  transition-duration: 1000ms;
 }
 
 .duration-700 {
@@ -818,6 +835,88 @@ video {
 
 .circle {
   border-radius: 50%;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+body::-moz-selection {
+  background-color: white;
+  color: black;
+}
+
+body::selection {
+  background-color: white;
+  color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10;
+}
+
+input::-moz-placeholder {
+  text-align: center;
+  font-size: x-large;
+}
+
+input::placeholder {
+  text-align: center;
+  font-size: x-large;
+}
+
+textarea::-moz-placeholder {
+  text-align: center;
+}
+
+textarea::placeholder {
+  text-align: center;
+}
+
+button:active {
+  scale: 0.9;
+}
+
+.selection\:bg-white *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-white *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.selection\:text-black *::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.selection\:text-black *::selection {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.selection\:bg-white::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-white::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.selection\:text-black::-moz-selection {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.selection\:text-black::selection {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:scale-150:hover {
@@ -890,10 +989,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 }
 

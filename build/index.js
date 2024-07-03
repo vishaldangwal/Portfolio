@@ -10,3 +10,7 @@ form.addEventListener("submit",(e) =>{
     subject.value = "";
     message.value = "";
 })
+
+document.body.addEventListener("contextmenu",(e) =>{
+e.preventDefault();
+})
