@@ -41,3 +41,6 @@ textarea::placeholder {
 button:active {
   scale: 0.9;
 }
+.w-90{
+  width: 70%;
+}
