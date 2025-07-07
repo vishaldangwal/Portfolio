@@ -4,41 +4,41 @@ import ProjectGrid from "./ProjectGrid";
 const Project = () => {
   const projects = [
     {
-      heading: "WebMark",
-      src: "https://images.unsplash.com/photo-1584824486539-53bb4646bdbc?auto=format&fit=crop&w=800&q=80",
+      heading: "Portfolio",
+      src: "/Images/DigitalPortfolio.webp",
       alt: "WebMark",
-      href: "https://github.com/vishaldangwal",
+      href: "https://github.com/vishaldangwal/Portfolio",
       description:
-        "Encrypted Cross-Platform Bookmark Manager Serving 100k+ Users. This project involved complex backend architecture, secure data handling, and a user-friendly frontend to manage bookmarks across various devices seamlessly. It was a challenging but rewarding experience.",
+        "This is a personal portfolio website showcasing my projects, technical skills, and experience. It reflects modern frontend design principles with seamless routing and a responsive layout.",
       tags: [
-        { color: "green", text: "Active" },
-        { color: "blue", text: "Fullstack" },
-        { color: "red", text: "Security" },
+        { color: "green", text: "React" },
+        { color: "blue", text: "Tailwindcss" },
+        { color: "red", text: "React Router Dom" },
       ],
     },
     {
-      heading: "PulseBoard",
-      src: "https://images.unsplash.com/photo-1556155092-8707de31f9c4?auto=format&fit=crop&w=800&q=80",
+      heading: "ZapCar",
+      src: "/Images/Car.jpeg",
       alt: "PulseBoard",
-      href: "https://github.com/vishaldangwal",
+      href: "https://github.com/vishaldangwal/ZapCar",
       description:
-        "Real-Time Analytics Dashboard for Monitoring KPIs. Developed a robust system capable of processing large volumes of data to provide instantaneous insights into key performance indicators. The dashboard featured customizable widgets and real-time data visualization.",
+        "ZapCar is a full-stack car rental and booking web application that streamlines the process of discovering, booking, and paying for vehicles online. It offers real-time availability, secure payments, and a seamless user experience.",
       tags: [
-        { color: "orange", text: "Beta" },
-        { color: "blue", text: "Next.js" },
-        { color: "purple", text: "Analytics" },
+        { color: "orange", text: "Full Stack" },
+        { color: "blue", text: "Node.js" },
+        { color: "purple", text: "MongoDB" },
       ],
     },
     {
-      heading: "AI Content Creator",
-      src: "https://plagiarismcheck.org/blog/wp-content/uploads/2023/06/shutterstock_1331036420-scaled-1536x804.jpg",
+      heading: "Currency Convertor",
+      src: "/Images/Currency.webp",
       alt: "AI Content Creator",
-      href: "https://github.com/vishaldangwal",
+      href: "https://github.com/vishaldangwal/currencyConvertor",
       description:
-        "A web application leveraging large language models to generate diverse content, from articles to social media posts. Features include tone customization and plagiarism checks.",
+        "Currency Converter is a responsive web application that allows users to convert between various currencies in real time, providing a simple and intuitive interface for global currency exchange.",
       tags: [
-        { color: "purple", text: "AI/ML" },
-        { color: "green", text: "Python" },
+        { color: "purple", text: "API" },
+        { color: "green", text: "JavaScript" },
         { color: "blue", text: "React" },
       ],
     },
@@ -79,8 +79,8 @@ const Project = () => {
         <a
           className="inline-flex items-center text-[#37352f] hover:bg-[#f7f6f3] px-4 py-2 rounded transition-colors"
           href="https://github.com/vishaldangwal"
-          target="_blank" 
-          rel="noopener noreferrer" 
+          target="_blank"
+          rel="noopener noreferrer"
           data-discover="true"
         >
           View all work{" "}
